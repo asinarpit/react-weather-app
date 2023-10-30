@@ -32,13 +32,15 @@ const DisplayWeather = ({ weatherData, loading, background, weatherIcon }) => {
         </h1>
       </div>
 
-      <div className="flex text-[#F5F5F5]">
-        <div className="py-6 px-4 md:py-10">{weatherIcon}</div>
+      <div className="flex flex-col sm:flex-row text-[#F5F5F5]  items-center">
+        <div className="flex flex-row">
+          <div className="py-6 px-4 md:py-10">{weatherIcon}</div>
 
-        <div className="flex flex-col items-center py-5">
-          <p className="text-7xl md:text-[8rem]">{`${formatTemp}\u00b0C`}</p>
-          <div className="h-[3px] w-[50%] rounded-full bg-[#F5F5F5] opacity-30 "></div>
-          <p className="py-2 text-2xl">{weatherCondition}</p>
+          <div className="flex flex-col items-center py-5">
+            <p className="text-7xl md:text-[8rem]">{`${formatTemp}\u00b0C`}</p>
+            <div className="h-[3px] w-[50%] rounded-full bg-[#F5F5F5] opacity-30 "></div>
+            <p className="py-2 text-2xl">{weatherCondition}</p>
+          </div>
         </div>
 
         <ul className="px-5 py-5 text-xl leading-10">

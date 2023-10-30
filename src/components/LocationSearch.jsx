@@ -55,7 +55,7 @@ const LocationSearch = ({
   
 
   return (
-    <div className="flex w-2/5 md:w-1/4 h-16 rounded-full bg-[#F5F5F5] absolute top-10 justify-center items-center">
+    <div className="flex w-3/5 sm:w-2/5 md:w-1/4 h-16 rounded-full bg-[#F5F5F5] absolute top-10 justify-center items-center">
       <input
         className="py-3 px-2 mx-6  h-3/5 w-full outline-none default:content-none text-grey bg-[#F5F5F5]"
         type="text"

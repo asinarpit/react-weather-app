@@ -16,7 +16,7 @@ const LocationSearch = ({
     console.log("Inside the hook with city name:");
     console.log(cityName);
 
-    const urlCity = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${API_KEY}`;
+    const urlCity = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${API_KEY}`;
 
     try {
       const { data } = await axios.get(urlCity);
